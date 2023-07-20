@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Iniciar Sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <p>Seleccionar el método de autenticación</p>
+
+            <form action="">
+                <p>
+                    <label  for="username">Usuario o Correo Electrónico: </label>
+                    <input class="input" type="text" name="username" id="username"
+                    placeholder="Ingresar Usuario o Correo Electrónico">
+                </p>
+
+                <p>
+                    <label for="password">Contraseña:</label>
+                    <input class="input" type="password" name="password" id="password" placeholder="Ingresar Contraseña">
+                </p>
+
+                <div class="options">
+                    <div class="remember">
+                        Recordarme <input type="checkbox" name="rememberme" id="rememberme">
+                    </div>
+                    <div>
+                        <a href="#">Olvide mi Contraseña</a>
+                    </div>
+                </div>
+                <p>
+                    <input type="submit" class="btn btn-login" value="Login">
+                </p>
+                <div class="providers">
+                    <span>Cambiar método de inicio de sesión:</span>
+                    <button class="btn btn-google">Google</button>
+                    <button class="btn btn-facebook">Facebook</button>
+                    <button class="btn btn-twitter">Twitter</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="welcome-screen-container">
+            <div class="titulo-bienvenido">
+               <h3 class="bienvenido">¡Bienvenido!</h3> 
+            </div>
+            <img class="img-bienvenida" src="img/Bienvenido.jpg" alt="Imagen de bienvanida" width="1280px 1920px">
+        </div>
+    </div>
+</body>
+</html>

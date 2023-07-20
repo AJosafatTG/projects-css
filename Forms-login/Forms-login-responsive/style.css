@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(img/wallpaper.jpg);
+    
+}
+
+.form-container {
+    
+    backdrop-filter: blur(15px);
+    width: 80%;
+    border-radius: 15px;
+    overflow: hidden;
+    
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+}
+.form-container .login-container {
+    width: 400px;
+    margin: 0 auto; 
+}
+
+.form-container .login-container > h2{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.form-container .login-container > p,
+.form-container .login-container > span {
+    text-align: center;
+    color: #707070;
+}
+
+.form-container .login-container label {
+    color: white;
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.form-container .login-container input.input {
+    display: block; 
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px #ce9d9d;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+
+
+.form-container .login-container input.input:focus {
+    outline: solid 2px #ff0015;
+}
+
+.form-container .login-container .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-container .login-container .options .remember {
+   color: white;
+}
+
+.form-container a {
+    color: #0084ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline 1.5px;
+}
+
+.form-container .login-container .providers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    margin-top: 30px;
+    font-weight: bolder;
+    color: #707070;
+}
+
+.btn {
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn.btn-login {
+    background-color: #ffd000;
+    color: black;
+}
+
+.btn.btn-login:hover {
+    background-color: #e9be00;
+    box-shadow: 1.5px 2px black;
+}
+
+.btn.btn-google {
+    background-color: #ff0000;
+    color: white;
+}
+
+.btn.btn-google:hover {
+    background-color: #e20202;
+    box-shadow: 1.5px 2px black;
+}
+
+.btn.btn-facebook {
+    background-color: #0a52d8;
+    color: white;
+    
+}
+
+.btn.btn-facebook:hover {
+    background-color: #0742b1; 
+    box-shadow: 1.5px 2px black;  
+}
+
+.btn.btn-twitter {
+    background-color: #0aa8d8;
+    color: white;
+}
+
+.btn.btn-twitter:hover {
+    background-color: #088cb4;
+    box-shadow: 1.5px 2px black;
+}
+
+.form-container .welcome-screen-container {
+    height: 100%;
+    width: 50%;
+}
+
+
+
+.form-container .welcome-screen-container .img-bienvenida {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.form-container .welcome-screen-container .titulo-bienvenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container .welcome-screen-container .titulo-bienvenido .bienvenido {
+    position: absolute;
+    top: 10%;
+    font-size: 3rem;
+    color: white;
+}
+@media screen and (max-width: 1200px) {
+    .form-container{
+    width: 95%;
+    }
+
+    .form-container .login-container {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .form-container .welcome-screen-container {
+        width: 40%;
+    }
+
+    .form-container .welcome-screen-container .titulo-bienvenido {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .form-container .login-container {
+        display: 350px;
+    }
+    .form-container .welcome-screen-container {
+        display: none;
+    }
+}
+
