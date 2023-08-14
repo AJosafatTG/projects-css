@@ -1,2 +1,2 @@
 # projects-css
-Portafolio de proyectos en CSS
+Portfolio of projects on HTML and CSS
