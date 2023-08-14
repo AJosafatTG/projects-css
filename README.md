@@ -1,4 +1,4 @@
-# projects-css
+# projects-html-css
 Portfolio of projects on HTML and CSS
 
 Barbershop 
